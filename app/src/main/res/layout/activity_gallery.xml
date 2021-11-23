@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="299dp"
+            android:layout_height="309dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/FBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food1"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="393dp" />
+
+        <Button
+            android:id="@+id/FBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food2"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="441dp" />
+
+        <Button
+            android:id="@+id/FBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food3"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="489dp" />
+
+        <EditText
+            android:id="@+id/editT"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            android:text="치킨"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="550dp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/editT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.63" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/btn"
+                layout="@layout/button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

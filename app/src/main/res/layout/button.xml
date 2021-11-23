@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF">
+
+    <Button
+        android:id="@+id/cv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:drawableBottom="@drawable/add_box" />
+
+    <Button
+        android:id="@+id/cv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:drawableBottom="@drawable/assignment_24" />
+
+    <Button
+        android:id="@+id/cv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:drawableBottom="@drawable/_search_24" />
+
+</merge>

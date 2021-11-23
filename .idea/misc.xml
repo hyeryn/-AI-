@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/drawable/_search_24.xml" value="0.38229166666666664" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/drawable/add_box.xml" value="0.2861111111111111" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/drawable/assignment_24.xml" value="0.16510416666666666" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/drawable/progress.xml" value="0.29010416666666666" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/layout/activity_camera.xml" value="0.26614583333333336" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/layout/activity_chart.xml" value="0.14895833333333333" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/layout/activity_diary.xml" value="0.36614583333333334" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/layout/activity_gallery.xml" value="0.22" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/layout/activity_intro.xml" value="0.36614583333333334" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/layout/activity_main.xml" value="0.26614583333333336" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/layout/activity_main2.xml" value="0.26614583333333336" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/layout/activity_nav.xml" value="0.26614583333333336" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/layout/activity_nothing.xml" value="0.26614583333333336" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/layout/activity_web.xml" value="0.24864130434782608" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/layout/button.xml" value="0.14895833333333333" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/layout/subactive_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/MyAndroidProject/ImageML2/ImageML2/app/src/main/res/layout/subactive_main1.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

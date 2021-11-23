@@ -1,0 +1,2 @@
+rootProject.name = "ImageML"
+include ':app'

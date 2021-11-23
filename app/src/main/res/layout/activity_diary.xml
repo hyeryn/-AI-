@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DiaryActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:elevation="1dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/purple_200"
+        app:tabTextColor="@color/purple_700">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오늘" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기록" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs">
+
+        <LinearLayout
+            android:id="@+id/todayK"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <org.eazegraph.lib.charts.PieChart
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/piechart"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:padding="5dp"
+                app:egLegendTextSize="18sp"
+                app:egUsePieRotation="true"
+                app:egValueTextSize="36sp"/>
+
+<!--            <ListView-->
+<!--                android:id="@+id/lv1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_marginStart="30dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginEnd="30dp"></ListView>-->
+
+            <ListView
+                android:id="@+id/lv1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"></ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+<!--                <Button-->
+<!--                    android:id="@+id/add"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="추가" />-->
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:text="삭제" />
+
+                <Button
+                    android:id="@+id/selectAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:text="전체선택" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/btn"
+                    layout="@layout/button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/todayD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="달력일기장"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--                android:textColor="#9E28B3"-->
+<!--                android:textSize="24sp"-->
+<!--                android:textStyle="bold" />-->
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:id="@+id/diaryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/contextEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:ems="8"
+                android:hint="내용을 입력하세요."
+                android:inputType="text"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="invisible" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <Button
+                    android:id="@+id/save_Btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="저장"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/cha_Btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="수정"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/del_Btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        android:text="삭제"
+                        android:visibility="invisible"
+
+                        ></Button>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progressBar"-->
+<!--                style="?android:attr/progressBarStyleHorizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="10dp" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/btn"
+                    layout="@layout/button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
